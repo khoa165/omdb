@@ -11,7 +11,7 @@ export const searchMovies = (query) => async (dispatch) => {
   try {
     // Send request to OMDB API endpoint.
     const res = await axios.get(
-      `http://www.omdbapi.com/?s=${query}&apikey=${process.env.REACT_APP_OMDB_API_KEY}&type=movie`
+      `https://www.omdbapi.com/?s=${query}&apikey=${process.env.REACT_APP_OMDB_API_KEY}&type=movie`
     );
     if (res.data && res.data.Response === 'True') {
       dispatch({
@@ -31,7 +31,7 @@ export const getMovieInfo = (id) => async (dispatch) => {
   try {
     // Send request to OMDB API endpoint.
     const res = await axios.get(
-      `http://www.omdbapi.com/?i=${id}&apikey=${process.env.REACT_APP_OMDB_API_KEY}&type=movie&plot=full`
+      `https://www.omdbapi.com/?i=${id}&apikey=${process.env.REACT_APP_OMDB_API_KEY}&type=movie&plot=full`
     );
     if (res.data && res.data.Response === 'True') {
       dispatch({
