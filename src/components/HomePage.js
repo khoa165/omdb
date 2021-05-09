@@ -5,7 +5,7 @@ import { searchMovies, toggleNomination } from '../actions/movies';
 import SearchBar from './SearchBar';
 import NominationList from './NominationList';
 import Movies from './Movies';
-import { Accordion, Row, Col, Spinner } from 'reactstrap';
+import { Row, Col, Spinner } from 'reactstrap';
 
 const HomePage = ({
   searchMovies,
