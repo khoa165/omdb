@@ -1,0 +1,117 @@
+body {
+  background-color: black;
+}
+
+#home-page {
+  .search-bar {
+    margin-bottom: 35px;
+
+    .search-btn {
+      text-align: right;
+
+      .btn {
+        width: 150px;
+      }
+    }
+  }
+
+  .nomination-list {
+    margin-bottom: 40px;
+    cursor: pointer;
+
+    .card-header {
+      background: #ccc;
+    }
+
+    .nomination-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+
+      h3 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .btn-danger {
+        width: 200px;
+        margin-right: 8px;
+      }
+      .btn-primary {
+        width: 120px;
+      }
+    }
+  }
+
+  .movie-card {
+    margin-bottom: 50px;
+
+    .movie-poster {
+      max-height: 500px;
+    }
+
+    .movie-title {
+      font-weight: bold;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #aaa;
+    }
+
+    .nominate-btn,
+    .visit-btn {
+      width: 120px;
+    }
+
+    .remove-btn {
+      width: 200px;
+    }
+  }
+}
+
+#info-page {
+  color: white;
+
+  .movie-card {
+    margin: 12vh 8vw;
+    border: 7px solid red;
+    border-radius: 50px 0 50px 0;
+    padding: 0 50px;
+  }
+
+  .movie-poster {
+    border: 5px solid white;
+  }
+
+  .movie-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(0, 217, 255);
+    text-decoration: underline;
+    text-underline-position: under;
+    margin-bottom: 20px;
+  }
+
+  .movie-subtitle,
+  .movie-extra-info {
+    font-size: 17px;
+    color: rgb(0, 255, 170);
+    margin-bottom: 0;
+  }
+
+  .movie-plot {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .movie-credits {
+    margin-bottom: 2px;
+    color: rgb(255, 255, 0);
+  }
+
+  .return-btn {
+    margin-top: 20px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+  }
+}
